@@ -1,0 +1,15 @@
+<h1>一覧</h1>
+
+<%= link_to '新規', new_report_path %>
+<ul>
+  <% @reports.each do |report| %>
+    <li>
+      <ul>
+        <li><%= report.note %></li>
+        <li><%= report.created_at %></li>
+      </ul>
+
+    </li>
+  <% end %>
+</ul>
+

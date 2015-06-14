@@ -1,0 +1,19 @@
+<h1>新規登録</h1>
+
+<%= form_for(@reports) do |f| %>
+  <div>
+    <%= f.label :note %>
+    <%= f.text_field :note %>
+  </div>
+  <div>
+    <%= f.label :area_code %>
+    <%= f.text_field :area_code %>
+  </div>
+
+  <div>
+    <%= f.submit %>
+  </div>
+<% end %>
+
+<%= link_to '戻る', reports_path %>
+
