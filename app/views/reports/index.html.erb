@@ -7,6 +7,7 @@
       <ul>
         <li><%= report.note %></li>
         <li><%= report.created_at %></li>
+        <li><%= link_to '詳細', report_path(report) %><%= link_to '編集', edit_report_path(report) %></li>
       </ul>
 
     </li>

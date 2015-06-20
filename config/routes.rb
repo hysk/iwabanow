@@ -1,6 +1,8 @@
 Iwabanow::Application.routes.draw do
-  
-  resources :reports, only: %i(index new create)
+
+  root :to => 'reports#index'
+
+  resources :reports
 
   
   # The priority is based upon order of creation: first created -> highest priority.
