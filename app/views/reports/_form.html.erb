@@ -1,0 +1,19 @@
+
+<%= form_for(report) do |f| %>
+  <div>
+    <%= f.label :id , report.id %>
+  </div>
+  <div>
+    <%= f.label :note %>
+    <%= f.text_field :note %>
+  </div>
+  <div>
+    <%= f.label :area_code %>
+    <%= f.text_field :area_code %>
+  </div>
+
+  <div>
+    <%= f.submit %>
+  </div>
+<% end %>
+

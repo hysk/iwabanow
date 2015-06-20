@@ -1,0 +1,14 @@
+<h1>詳細</h1>
+
+      <ul>
+        <li><%= @report.id %></li>
+        <li><%= @report.note %></li>
+        <li><%= @report.created_at %></li>
+      </ul>
+
+    <div>
+      <%= link_to 'このレコードを削除する', report_path(@report), method: 'DELETE' %>
+    </div>
+
+<%= link_to 'back', reports_path %>
+
